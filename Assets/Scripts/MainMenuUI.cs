@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuUI : MonoBehaviour
 {
+    public Animator transition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,11 +16,18 @@ public class MainMenuUI : MonoBehaviour
     // Update is called once per frame
     public void StartGameButton()
     {
-        SceneManager.LoadScene("DesertScene");
+        StartCoroutine(LoadLevel("DesertScene"));
     }
 
     public void QuitGameButton()
     {
         Application.Quit();
+    }
+
+    IEnumerator LoadLevel(string name)
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(name);
     }
 }
