@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8d0477c77a545704eaaccf084652f733
+guid: 358b09d6075ab7945bc1021c80edfd6f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerRunLeft-sheet_0
+      name: PlayerIdleRight-sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a8ba1b2d2777ee4db6a8dbf823849f5
-      internalID: 2027132944
+      spriteID: b295d06312c61ba49ba5b9488b919467
+      internalID: -1860443269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRunLeft-sheet_1
+      name: PlayerIdleRight-sheet_1
       rect:
         serializedVersion: 2
         x: 32
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88abf628ba706bf4d9470c30921ccf1a
-      internalID: 2094558747
+      spriteID: 1958637e837d05343bc477790f195018
+      internalID: 709409434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRunLeft-sheet_2
+      name: PlayerIdleRight-sheet_2
       rect:
         serializedVersion: 2
         x: 64
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbc90c80a15cd2a4688d93431f4e7d72
-      internalID: -311171108
+      spriteID: 2202724287bdb3d498b2fa9f1c91b1f9
+      internalID: 528412022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRunLeft-sheet_3
+      name: PlayerIdleRight-sheet_3
       rect:
         serializedVersion: 2
         x: 96
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b50a335b8bfa7448ae0e5b23e998576
-      internalID: 1928287746
+      spriteID: d694ec9fbef8f97459c0b4cec581821c
+      internalID: 538011135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRunLeft-sheet_4
+      name: PlayerIdleRight-sheet_4
       rect:
         serializedVersion: 2
         x: 128
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 089a8eb21e2feb546afd59bad08e8391
-      internalID: -215714110
+      spriteID: a76b185f089678c4da9190d0061ef811
+      internalID: 1403870363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRunLeft-sheet_5
+      name: PlayerIdleRight-sheet_5
       rect:
         serializedVersion: 2
         x: 160
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6f28f7e853f32740af31683ce2296f2
-      internalID: -133577867
+      spriteID: 0f4b8e77ab3bc854bbb65472a6061e40
+      internalID: 1539658895
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerRunLeft-sheet_4: -215714110
-      PlayerRunLeft-sheet_3: 1928287746
-      PlayerRunLeft-sheet_1: 2094558747
-      PlayerRunLeft-sheet_0: 2027132944
-      PlayerRunLeft-sheet_5: -133577867
-      PlayerRunLeft-sheet_2: -311171108
+      PlayerIdleRight-sheet_4: 1403870363
+      PlayerIdleRight-sheet_3: 538011135
+      PlayerIdleRight-sheet_5: 1539658895
+      PlayerIdleRight-sheet_0: -1860443269
+      PlayerIdleRight-sheet_1: 709409434
+      PlayerIdleRight-sheet_2: 528412022
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

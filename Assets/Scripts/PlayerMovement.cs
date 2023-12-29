@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -19,12 +17,9 @@ public class PlayerMovement : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
     
-    void Update()
+    private void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        _animator.SetFloat("Horizontal", horizontal);
-        _animator.SetBool("IsFacingRight", _isFacingRight);
-        Flip();
+        AnimatorHandler();
     }
 
     private void FixedUpdate()
@@ -32,16 +27,46 @@ public class PlayerMovement : MonoBehaviour
         InputHandler();
     }
 
-    private void Flip()
+    private void AnimatorHandler()
     {
+        horizontal = Input.GetAxisRaw("Horizontal");
+        
         if (_isFacingRight && horizontal < 0f || !_isFacingRight && horizontal > 0f)
         {
             _isFacingRight = !_isFacingRight;
+        }
+
+        if (_isFacingRight)
+        {
+            if (horizontal > 0.5f)
+            {
+                _animator.CrossFade("PlayerRunRight", 0, 0);
+            }
+            else
+            {
+                _animator.CrossFade("PlayerIdleRight", 0, 0);
+            }
+        }
+        else
+        {
+            if (horizontal < -0.5f)
+            {
+                _animator.CrossFade("PlayerRunLeft", 0, 0);
+            }
+            else
+            {
+                _animator.CrossFade("PlayerIdleLeft", 0, 0);
+            }
         }
     }
 
     private void InputHandler()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+    }
+
+    public bool FacingRight()
+    {
+        return _isFacingRight;
     }
 }

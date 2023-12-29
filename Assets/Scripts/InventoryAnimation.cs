@@ -6,13 +6,13 @@ public class InventoryAnimation : MonoBehaviour
     private Animator _animator;
     private String _animState;
     
-    void Start()
+    private void Start()
     {
         _animator = GetComponent<Animator>();
         _animState = "InventoryClose";
     }
     
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
@@ -20,9 +20,8 @@ public class InventoryAnimation : MonoBehaviour
         }
     }
 
-    void ChangeAnimatorState()
+    private void ChangeAnimatorState()
     {
-        print("Should change");
         if (_animState == "InventoryClose")
         {
             _animator.Play("InventoryOpen");
