@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fdd95f42c75165a499907a704f7484c6
+guid: 2155ef4b945e9ba49847bea4e02e064a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-vulpinGuardCenolau-RunR_0
+      name: Guard_IdleLeft-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 43
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f59991725b5044439497a77066ce7be
-      internalID: 119036419
+      spriteID: 455388238d469fc4190c0d8232993ae1
+      internalID: -282053382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-vulpinGuardCenolau-RunR_1
+      name: Guard_IdleLeft-Sheet_1
       rect:
         serializedVersion: 2
-        x: 43
+        x: 32
         y: 0
-        width: 43
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b98ec43dabe26ec48bd2cc94fd538280
-      internalID: 321199258
+      spriteID: 62c6889c74d65b24b9747a2ae2f194e7
+      internalID: 1862617368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-vulpinGuardCenolau-RunR_2
+      name: Guard_IdleLeft-Sheet_2
       rect:
         serializedVersion: 2
-        x: 86
+        x: 64
         y: 0
-        width: 43
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 367357194bc05de4cac47c64bc619391
-      internalID: -654354892
+      spriteID: 04d84597b6a4bc84e9206cc9c646783a
+      internalID: -1941663343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-vulpinGuardCenolau-RunR_3
+      name: Guard_IdleLeft-Sheet_3
       rect:
         serializedVersion: 2
-        x: 129
+        x: 96
         y: 0
-        width: 43
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,19 +194,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da3be8fda135584438de224e4e2c705b
-      internalID: 60312384
+      spriteID: d9d171794284c724b8df75652879c79c
+      internalID: 966020744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-vulpinGuardCenolau-RunR_4
+      name: Guard_IdleLeft-Sheet_4
       rect:
         serializedVersion: 2
-        x: 172
+        x: 128
         y: 0
-        width: 43
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -215,19 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d59df69c169a9548ba2c3e9c1b9e28c
-      internalID: 970967840
+      spriteID: 7a106db04b871e248ac35b16f43e04ba
+      internalID: 423937248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-vulpinGuardCenolau-RunR_5
+      name: Guard_IdleLeft-Sheet_5
       rect:
         serializedVersion: 2
-        x: 215
+        x: 160
         y: 0
-        width: 43
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -236,71 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a22abe4c5869801488b3fb5ff4f3cdd8
-      internalID: 717135128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-vulpinGuardCenolau-RunR_6
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 0
-        width: 43
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8bb44046bed9eb4faaff284b4fc8170
-      internalID: -211759932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-vulpinGuardCenolau-RunR_7
-      rect:
-        serializedVersion: 2
-        x: 301
-        y: 0
-        width: 43
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb7a62ac0206e124b9b173071e8ef9d2
-      internalID: 825148314
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-vulpinGuardCenolau-RunR_8
-      rect:
-        serializedVersion: 2
-        x: 344
-        y: 0
-        width: 43
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b6b1bb4f42bab243831f74ce24108c4
-      internalID: 902969638
+      spriteID: 8374f15b2f6b41e4985254a334fff33d
+      internalID: -306392724
       vertices: []
       indices: 
       edges: []
@@ -316,15 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-vulpinGuardCenolau-RunR_7: 825148314
-      Sprite-vulpinGuardCenolau-RunR_1: 321199258
-      Sprite-vulpinGuardCenolau-RunR_8: 902969638
-      Sprite-vulpinGuardCenolau-RunR_2: -654354892
-      Sprite-vulpinGuardCenolau-RunR_3: 60312384
-      Sprite-vulpinGuardCenolau-RunR_5: 717135128
-      Sprite-vulpinGuardCenolau-RunR_4: 970967840
-      Sprite-vulpinGuardCenolau-RunR_0: 119036419
-      Sprite-vulpinGuardCenolau-RunR_6: -211759932
+      Guard_IdleLeft-Sheet_1: 1862617368
+      Guard_IdleLeft-Sheet_4: 423937248
+      Guard_IdleLeft-Sheet_3: 966020744
+      Guard_IdleLeft-Sheet_5: -306392724
+      Guard_IdleLeft-Sheet_0: -282053382
+      Guard_IdleLeft-Sheet_2: -1941663343
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
