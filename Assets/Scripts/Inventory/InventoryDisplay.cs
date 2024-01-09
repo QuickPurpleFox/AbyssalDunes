@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class InventoryDisplay : MonoBehaviour
 {
+    /*********************************************************************
+    *                            DOKUMENTACJA                            *
+    *   https://docs.unity3d.com/ScriptReference/Object.Instantiate.html *
+    *                                                                    *
+    **********************************************************************/
+    
     private int _xColumn;
     private int _yColumn;
 
