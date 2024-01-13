@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6a783444ce0187447beb9690432f1f76
+guid: 03dc5bd2bfe0f2d4e91a44753e57ec27
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guard_RunLeft_0
+      name: Guard_AttackLeft_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b42243734dcecd54aadfa269b62e4f94
-      internalID: 1639851162
+      spriteID: 61c0d6d3343e8cf49944312ee46046a6
+      internalID: -637819026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_RunLeft_1
+      name: Guard_AttackLeft_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 0
-        width: 48
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,71 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32a5918b856c14d4087d86334540d6fa
-      internalID: -51125085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guard_RunLeft_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c14c870cc3fce04cb57aa76528aba4f
-      internalID: 1088624096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guard_RunLeft_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f5c9ab2cbcb59f4a86c59d9a5bb45bb
-      internalID: -29243397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guard_RunLeft_4
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6cc6be80e1e0e5444b2ae13fdebbfeb5
-      internalID: -1929384455
+      spriteID: 2fc80890f85740342a53f11fc06e5fbf
+      internalID: -1493500341
       vertices: []
       indices: 
       edges: []
@@ -232,11 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guard_RunLeft_4: -1929384455
-      Guard_RunLeft_1: -51125085
-      Guard_RunLeft_0: 1639851162
-      Guard_RunLeft_3: -29243397
-      Guard_RunLeft_2: 1088624096
+      Guard_AttackLeft_0: -637819026
+      Guard_AttackLeft_1: -1493500341
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02bd7f7bf7b8d0543ae9a90c4b15cae9, type: 3}
   m_Name: HealthPotion
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 4816483935595095068, guid: b252f30a659d60f4a81f4876beb1e624, type: 3}
   type: 0
   description: "Potion made from various herbs well know to Vulpins. Works well on
     all Caninae races. \nRestore 1 HP. \nCost: 50 gold"

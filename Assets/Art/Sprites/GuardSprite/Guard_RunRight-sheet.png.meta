@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6a783444ce0187447beb9690432f1f76
+guid: 69063913fadcfd243b79b7f47daf1cd4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guard_RunLeft_0
+      name: Guard_RunRight-sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b42243734dcecd54aadfa269b62e4f94
-      internalID: 1639851162
+      spriteID: e19f46860725284498a5020b65d85ab6
+      internalID: -1805843875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_RunLeft_1
+      name: Guard_RunRight-sheet_1
       rect:
         serializedVersion: 2
         x: 48
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32a5918b856c14d4087d86334540d6fa
-      internalID: -51125085
+      spriteID: be46f06f4c4a450449838451c1a94b63
+      internalID: 1318312163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_RunLeft_2
+      name: Guard_RunRight-sheet_2
       rect:
         serializedVersion: 2
         x: 96
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c14c870cc3fce04cb57aa76528aba4f
-      internalID: 1088624096
+      spriteID: 1f1d41bbce11e9e42a97808838bb537c
+      internalID: 793289008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_RunLeft_3
+      name: Guard_RunRight-sheet_3
       rect:
         serializedVersion: 2
         x: 144
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f5c9ab2cbcb59f4a86c59d9a5bb45bb
-      internalID: -29243397
+      spriteID: ba8e8cc6feac45e41b0b061558958d10
+      internalID: -1077322056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_RunLeft_4
+      name: Guard_RunRight-sheet_4
       rect:
         serializedVersion: 2
         x: 192
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cc6be80e1e0e5444b2ae13fdebbfeb5
-      internalID: -1929384455
+      spriteID: 988669c6e761bf34983e09353f062ed6
+      internalID: -1319755971
       vertices: []
       indices: 
       edges: []
@@ -232,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guard_RunLeft_4: -1929384455
-      Guard_RunLeft_1: -51125085
-      Guard_RunLeft_0: 1639851162
-      Guard_RunLeft_3: -29243397
-      Guard_RunLeft_2: 1088624096
+      Guard_RunRight-sheet_4: -1319755971
+      Guard_RunRight-sheet_0: -1805843875
+      Guard_RunRight-sheet_2: 793289008
+      Guard_RunRight-sheet_3: -1077322056
+      Guard_RunRight-sheet_1: 1318312163
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

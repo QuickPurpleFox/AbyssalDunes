@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6a783444ce0187447beb9690432f1f76
+guid: 7bdf27a5be6989f439c6dcb5e5637745
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,12 +117,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guard_RunLeft_0
+      name: Guard_IdleRightt-Sheet-sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b42243734dcecd54aadfa269b62e4f94
-      internalID: 1639851162
+      spriteID: d2d6e56ab4451db4e9ec6467e0d4301c
+      internalID: -1111745990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_RunLeft_1
+      name: Guard_IdleRightt-Sheet-sheet_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 0
-        width: 48
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +152,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32a5918b856c14d4087d86334540d6fa
-      internalID: -51125085
+      spriteID: ae986029c4d0e57468a734f4cb284968
+      internalID: 645851052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_RunLeft_2
+      name: Guard_IdleRightt-Sheet-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6f4ad86d16ab54fb1a55f906c4881e
+      internalID: 1722885280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard_IdleRightt-Sheet-sheet_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 48
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,19 +194,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c14c870cc3fce04cb57aa76528aba4f
-      internalID: 1088624096
+      spriteID: 19685edf7c2e35349b481ca63e82c2fe
+      internalID: 187221132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_RunLeft_3
+      name: Guard_IdleRightt-Sheet-sheet_4
       rect:
         serializedVersion: 2
-        x: 144
+        x: 128
         y: 0
-        width: 48
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,19 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f5c9ab2cbcb59f4a86c59d9a5bb45bb
-      internalID: -29243397
+      spriteID: a87b6a5d705a3c247980655390f04b5a
+      internalID: 1307349847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guard_RunLeft_4
+      name: Guard_IdleRightt-Sheet-sheet_5
       rect:
         serializedVersion: 2
-        x: 192
+        x: 160
         y: 0
-        width: 48
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -215,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cc6be80e1e0e5444b2ae13fdebbfeb5
-      internalID: -1929384455
+      spriteID: f10853396c0525545819139ba7d6ac3e
+      internalID: 87206590
       vertices: []
       indices: 
       edges: []
@@ -232,11 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guard_RunLeft_4: -1929384455
-      Guard_RunLeft_1: -51125085
-      Guard_RunLeft_0: 1639851162
-      Guard_RunLeft_3: -29243397
-      Guard_RunLeft_2: 1088624096
+      Guard_IdleRightt-Sheet-sheet_5: 87206590
+      Guard_IdleRightt-Sheet-sheet_4: 1307349847
+      Guard_IdleRightt-Sheet-sheet_0: -1111745990
+      Guard_IdleRightt-Sheet-sheet_3: 187221132
+      Guard_IdleRightt-Sheet-sheet_2: 1722885280
+      Guard_IdleRightt-Sheet-sheet_1: 645851052
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
