@@ -5,6 +5,17 @@ public class Health : MonoBehaviour
 {
     public static Health Instance { get; private set; }
     
+    private ParticleSystem _cachedSystem;
+    ParticleSystem System
+    {
+        get
+        {
+            if (_cachedSystem == null)
+                _cachedSystem = GetComponent<ParticleSystem>();
+            return _cachedSystem;
+        }
+    }
+    
     [SerializeField]
     private int health;
     [SerializeField]
@@ -26,6 +37,11 @@ public class Health : MonoBehaviour
         {
             Instance = this;
         }
+
+        if (System)
+        {
+            System.Stop();
+        }
     }
 
     private void Update()
@@ -35,7 +51,7 @@ public class Health : MonoBehaviour
             health = numberOfHearts;
         }
 
-        for(int i = 0; i < hearts.LongLength; i++)
+        for(var i = 0; i < hearts.LongLength; i++)
         {
             if(i < health)
             {
@@ -59,6 +75,10 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (System)
+        {
+            System.Play();
+        }
         health = health - damage;
     }
 

@@ -5,8 +5,14 @@ public class PlayerMovement : MonoBehaviour
     public float horizontal;
     [SerializeField]
     private float speed = 4f;
-    //private float _jumpingPower = 6f;
+    private float _jumpingPower = 6f;
     private bool _isFacingRight = false;
+    private bool _isJumping = false;
+    private bool _isInAir = false;
+    private RaycastHit2D _ray;
+    private LayerMask _groundMask;
+    
+    public float raySize = 2;
 
     [SerializeField]
     private Rigidbody2D rb;
@@ -15,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         _animator = GetComponent<Animator>();
+        _groundMask = LayerMask.GetMask("Ground");
     }
     
     private void Update()
@@ -36,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
             _isFacingRight = !_isFacingRight;
         }
 
-        if (_isFacingRight)
+        if (_isFacingRight  && !_isInAir)
         {
             if (horizontal > 0.5f)
             {
@@ -47,9 +54,9 @@ public class PlayerMovement : MonoBehaviour
                 _animator.CrossFade("PlayerIdleRight", 0, 0);
             }
         }
-        else
+        else if(!_isInAir)
         {
-            if (horizontal < -0.5f)
+            if (horizontal < -0.5f )
             {
                 _animator.CrossFade("PlayerRunLeft", 0, 0);
             }
@@ -58,11 +65,33 @@ public class PlayerMovement : MonoBehaviour
                 _animator.CrossFade("PlayerIdleLeft", 0, 0);
             }
         }
+        if (Input.GetKeyDown(KeyCode.Space) && !_isInAir)
+        {
+            _isJumping = true;
+            _animator.CrossFade("PlayerJumpLeft", 0, 0);
+        }
     }
 
     private void InputHandler()
     {
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        Debug.DrawRay(transform.position, Vector2.down * raySize, Color.magenta);
+        if (_isInAir)
+        {
+            if (Physics2D.Raycast(transform.position, Vector2.down, raySize, _groundMask))
+            {
+                _isInAir = false;
+            }
+        }
+        else if (!_isInAir && _isJumping)
+        {
+            rb.velocity = new Vector2(0, 6);
+            _isJumping = !_isJumping;
+            _isInAir = true;
+        }
+        else
+        {
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        }
     }
 
     public bool FacingRight()
