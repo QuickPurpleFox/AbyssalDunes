@@ -71,6 +71,11 @@ public class Health : MonoBehaviour
                 hearts[i].enabled = false;
             }
         }
+
+        if (health < 0)
+        {
+            
+        }
     }
 
     public void TakeDamage(int damage)
