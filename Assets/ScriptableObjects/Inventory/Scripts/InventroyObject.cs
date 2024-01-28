@@ -8,6 +8,19 @@ public class InventroyObject : ScriptableObject
 
     public void AddItem(ItemObject item, int amount)
     {
-        container.Add(new InventorySlot(item, amount));
+        bool hasItem = false;
+        for (int i = 0; i < container.Count; i++)
+        {
+            if (container[i].item == item)
+            {
+                hasItem = true;
+                container.Add(new InventorySlot(item, amount));
+                break;
+            }
+        }
+        if (!hasItem)
+        {
+            container.Add(new InventorySlot(item, amount));
+        }
     }
 }

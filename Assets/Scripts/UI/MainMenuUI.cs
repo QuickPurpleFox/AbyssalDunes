@@ -16,7 +16,7 @@ public class MainMenuUI : MonoBehaviour
     // Update is called once per frame
     public void StartGameButton()
     {
-        StartCoroutine(LoadLevel("DesertScene"));
+        SceneManager.LoadScene("DesertScene");
     }
 
     public void QuitGameButton()

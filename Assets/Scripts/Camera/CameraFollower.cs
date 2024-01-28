@@ -7,6 +7,8 @@ public class CameraFollower : MonoBehaviour
     public float followSpeed = 2f;
     public Transform target;
     public PlayerMovement pM;
+    private float _minPosition = -23;
+    private float _maxPosition = 23;
 
     void Update()
     {
@@ -20,6 +22,7 @@ public class CameraFollower : MonoBehaviour
             newPosition = new Vector3(target.position.x - 5f, 0, -10f);
         }
 
-        transform.position = Vector3.Slerp(transform.position, newPosition, followSpeed * Time.deltaTime);
+        var clampTransform = Mathf.Clamp(newPosition.x, _minPosition, _maxPosition);
+        transform.position = Vector3.Slerp(transform.position, new Vector3(clampTransform, newPosition.y), followSpeed * Time.deltaTime);
     }
 }

@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float horizontal;
     [SerializeField]
     private float speed = 4f;
-    private bool _isFacingRight = false;
+    public bool _isFacingRight = false;
     private bool _isJumping = false;
     private bool _isInAir = false;
     private RaycastHit2D _ray;
@@ -17,24 +17,37 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField]
     private Rigidbody2D rb;
-    private Animator _animator;
+    public Animator animator;
     private Transform _transform;
 
+    public static PlayerMovement Instance;
+    public bool isAlive = true;
+    
     private void Start()
     {
-        _animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         _transform = GetComponent<Transform>();
         _groundMask = LayerMask.GetMask("Ground");
     }
     
     private void Update()
     {
-        AnimatorHandler();
+        if (isAlive)
+        {
+            AnimatorHandler();
+        }
+        else
+        {
+            animator.CrossFade("PlayerDeadLeft", 0, 0);
+        }
     }
 
     private void FixedUpdate()
     {
-        InputHandler();
+        if (isAlive)
+        {
+            InputHandler();
+        }
     }
 
     private void AnimatorHandler()
@@ -50,29 +63,29 @@ public class PlayerMovement : MonoBehaviour
         {
             if (horizontal > 0.5f)
             {
-                _animator.CrossFade("PlayerRunRight", 0, 0);
+                animator.CrossFade("PlayerRunRight", 0, 0);
             }
             else
             {
-                _animator.CrossFade("PlayerIdleRight", 0, 0);
+                animator.CrossFade("PlayerIdleRight", 0, 0);
             }
         }
         else if(!_isInAir)
         {
             if (horizontal < -0.5f )
             {
-                _animator.CrossFade("PlayerRunLeft", 0, 0);
+                animator.CrossFade("PlayerRunLeft", 0, 0);
             }
             else
             {
-                _animator.CrossFade("PlayerIdleLeft", 0, 0);
+                animator.CrossFade("PlayerIdleLeft", 0, 0);
             }
         }
         if (Input.GetKeyDown(KeyCode.Space) && !_isInAir)
         {
             //spacja skok, jak is trigger to podciagniecie na dach
             _isJumping = true;
-            _animator.CrossFade("PlayerJumpLeft", 0, 0);
+            animator.CrossFade("PlayerJumpLeft", 0, 0);
         }
     }
 
@@ -113,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.transform.CompareTag("Roof"))
         {
             _crawlFlag = true;
-            _animator.CrossFade("PlayerJumpIdleLeft",0 ,0);
+            animator.CrossFade("PlayerJumpIdleLeft",0 ,0);
             rb.position = new Vector2(_transform.position.x, 1.6f);
         }
     }

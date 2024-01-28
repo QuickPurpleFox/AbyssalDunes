@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 83cc505478e786848b36a7923d9b0cdb
+  - enabled: 1
     path: Assets/Scenes/DesertScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/MainMenuScene.unity
-    guid: 83cc505478e786848b36a7923d9b0cdb
+    path: Assets/Scenes/Tavern.unity
+    guid: c764c8596bdf29542ab689c27dcca21f
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 1313448e8284735449284df38f76d25f
   m_configObjects: {}

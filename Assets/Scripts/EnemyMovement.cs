@@ -4,6 +4,8 @@ public class EnemyMovement : MonoBehaviour
 {
     public bool noticeThief;
     
+    private int _health = 2;
+    
     [SerializeField]
     private float speed = 3.5f;
     [SerializeField] 
@@ -33,7 +35,11 @@ public class EnemyMovement : MonoBehaviour
     
     void Update()
     {
-        _ray = Physics2D.Raycast(transform.position, Vector2.right, 5f, _mask);
+        if (_health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+        _ray = Physics2D.Raycast(transform.position, Vector2.right * _rotate, 5f, _mask);
         
         Debug.DrawRay(_transform.position, Vector2.right * (_rotate * 5), Color.red);
         
@@ -77,5 +83,10 @@ public class EnemyMovement : MonoBehaviour
     {
         _ = other;
         _collisionEnter = false;
+    }
+
+    public void TakeDamage()
+    {
+        _health = _health - 1;
     }
 }

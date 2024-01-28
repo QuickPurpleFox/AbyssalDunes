@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Ground
   - Roof
+  - Doors
+  - NPC
+  - Item
+  - Portal
   layers:
   - Default
   - TransparentFX

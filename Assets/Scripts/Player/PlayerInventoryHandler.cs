@@ -1,7 +1,8 @@
+using System;
 using UnityEngine;
 
 public class PlayerInventoryHandler : MonoBehaviour
 {
     [SerializeField]
-    private InventroyObject inventory;
+    public InventroyObject inventory;
 }
